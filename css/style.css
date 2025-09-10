@@ -1,0 +1,114 @@
+﻿.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack */
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; /* 2 - чтобы не рушился контент сайтбара + clearfix; 1- отступ слева. */
+}
+
+body {
+	color: white;
+	font-size: 10px; /* цвет и размер шрифта */
+}
+
+
+.header{
+	margin-bottom: 10px; /* отбрасывание внизу */
+}
+
+/* из header  перемещаем свойства в inner- */
+
+.inner-header {
+	background-color: black;
+	height: 400px;
+}
+
+.content {
+	width: 100%;
+	float: left;
+}
+
+.inner-content {
+	background-color: black;
+	min-height: 600px;
+}
+
+
+.sidebar-1 {
+	width: 25%;
+	float: left;
+		padding-right: 10px; /* 1- отступ слева */
+	padding-left: 10px; /* 1- отступ слева */
+}
+
+.inner-sidebar-1 {
+	background-color: #D9D9D9;
+	min-height: 500px;
+	border-radius: 90px;
+	border: solid 15px #f2f2f2;
+}
+
+
+.sidebar-2 {
+	width: 50%;
+	float: left;
+	
+}
+.inner-sidebar-2 {
+	background-color: #D9D9D9;
+	min-height: 500px;
+	border-radius: 90px;
+	border: solid 15px #f2f2f2;
+}
+
+.inner-sidebar-2  p{
+padding-left: 300px; /* 1- отступ слева */
+	
+}
+
+.inner-sidebar-2  img{
+	padding: 3% 0 0 3%;
+
+	
+}
+
+.sidebar-3 {
+	width: 25%;
+	float: left;
+	padding-right: 10px; /* 1- отступ слева */
+	padding-left: 10px; /* 1- отступ слева */
+}
+.inner-sidebar-3 {
+	background-color: #D9D9D9;
+	min-height: 500px;
+	border-radius: 90px;
+	border: solid 15px #f2f2f2;
+}
+
+
+
+
+
+.footer {
+	margin-top: 10px; /* отбрасывание вверху */
+}
+
+.inner-footer {
+	background-color: #130B14;
+	height: 140px;
+}
